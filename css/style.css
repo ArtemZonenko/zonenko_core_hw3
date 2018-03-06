@@ -25,6 +25,7 @@ body {
 }
 
 img {
+    margin-bottom: 32px;
     display: block;
     max-width: 100%;
     height: auto;
@@ -41,6 +42,7 @@ img {
 }
 
 .site-menu {
+    display: block;
     font-family: 'Playfair Display', serif;
     color: #626262;
     font-size: 14px;
@@ -70,16 +72,23 @@ img {
 }
 
 .about-list-item {
+    margin-bottom: 130px;
     width: 420px;
     display: inline-block;
     font-style: 14px;
+    vertical-align: top
 }
 
 .about-list-item:not(:nth-child(2n)) {
     margin-right: 60px;
 }
 
+.about-list-item:nth-last-child(-n +2) {
+    margin-bottom: 0;
+}
+
 .subtitle {
+    margin-bottom: 32px;
     font-family: 'Ubuntu', sans-serif;
     color: #b4ad9e;
     font-size: 14px;
@@ -88,6 +97,7 @@ img {
 }
 
 .title {
+    margin-bottom: 38px;
     font-size: 30px;
     line-height: 36px;
 }
@@ -96,7 +106,8 @@ img {
     font-size: 14px;
     line-height: 24px;
 }
-.dropdown{
+
+.dropdown {
     text-align: center;
     width: 164px;
     margin: 0 auto;
@@ -110,4 +121,25 @@ img {
     border: 0px;
     margin-top: 57px;
     margin-bottom: 70px;
-}
+    cursor: pointer;
+ }
+
+/* .dropdown {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 164px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    box-sizing: inherit;
+    margin-bottom: 70px;
+    margin-right: 0px;
+    margin-top: 57px;
+} */ 
